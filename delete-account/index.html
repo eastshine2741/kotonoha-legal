@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kotonoha 계정 삭제 안내</title>
+  <style>
+    :root {
+      --fg: #1f2328;
+      --muted: #57606a;
+      --bg: #ffffff;
+      --link: #0969da;
+      --border: #d0d7de;
+      --code-bg: #f6f8fa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e6edf3;
+        --muted: #8b949e;
+        --bg: #0d1117;
+        --link: #58a6ff;
+        --border: #30363d;
+        --code-bg: #161b22;
+      }
+    }
+    html, body { background: var(--bg); color: var(--fg); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Pretendard", sans-serif;
+      max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; line-height: 1.7;
+      font-size: 15px;
+    }
+    h1 { font-size: 24px; margin: 0 0 8px; }
+    h2 { font-size: 17px; margin: 32px 0 8px; padding-top: 8px; border-top: 1px solid var(--border); }
+    h2:first-of-type { border-top: none; padding-top: 0; }
+    p, li { margin: 8px 0; }
+    ul, ol { padding-left: 1.4em; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color: var(--muted); font-size: 13px; margin: 0 0 24px; }
+    .nav { color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); }
+    code { background: var(--code-bg); padding: 1px 6px; border-radius: 4px; font-size: 0.92em; }
+    table {
+      width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top;
+    }
+    th { background: var(--code-bg); font-weight: 600; }
+    .callout {
+      border-left: 3px solid var(--link);
+      padding: 8px 14px;
+      background: var(--code-bg);
+      margin: 16px 0;
+      border-radius: 0 6px 6px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kotonoha 계정 삭제 안내</h1>
+  <p class="meta">최종 업데이트: 2026년 5월 28일</p>
+
+  <p>Kotonoha(코토노하)는 사용자가 앱 내에서 직접 계정과 학습 데이터를 삭제할 수 있도록 하고 있습니다. 이 페이지는 Google Play 데이터 안전성(Data Safety) 정책에 따라 삭제 절차와 처리 방식을 안내합니다.</p>
+
+  <h2>1. 앱 내에서 삭제하는 방법</h2>
+  <ol>
+    <li>Kotonoha 앱을 실행합니다.</li>
+    <li>홈 화면 우측 상단 또는 프로필 메뉴에서 <strong>설정</strong>을 엽니다.</li>
+    <li>설정 화면 가장 아래의 <strong>계정 삭제</strong> 항목을 누릅니다.</li>
+    <li>안내 다이얼로그를 확인한 뒤 <strong>계속</strong>을 누릅니다.</li>
+    <li>마지막 확인 화면에서 <code>삭제</code>를 입력하고 <strong>계정 삭제</strong> 버튼을 누릅니다.</li>
+  </ol>
+
+  <h2>2. 삭제 처리되는 데이터</h2>
+  <p>계정 삭제 요청 시 아래 데이터가 처리됩니다.</p>
+  <table>
+    <thead>
+      <tr><th>항목</th><th>처리 방식</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>계정 식별 정보 (이메일 주소, 표시 이름)</td>
+        <td>즉시 영구 삭제</td>
+      </tr>
+      <tr>
+        <td>Google 로그인 연결 정보 (Google 계정 고유 식별자)</td>
+        <td>즉시 식별 불가능한 형태로 변경되어 향후 영구 삭제 대상에 포함</td>
+      </tr>
+      <tr>
+        <td>사용자명(username)</td>
+        <td>즉시 식별 불가능한 형태로 변경되어 향후 영구 삭제 대상에 포함</td>
+      </tr>
+      <tr>
+        <td>저장한 단어, 플래시카드, 학습 이력, 덱, 일일 학습 통계, 사용자 설정 등 모든 학습 데이터</td>
+        <td>접근 불가능한 상태로 비활성화되며, 일정 보관 기간 이후 영구 삭제 대상에 포함</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>삭제 즉시 해당 계정으로는 로그인할 수 없으며, 모든 학습 데이터에 다시 접근할 수 없습니다.</p>
+
+  <h2>3. 데이터 보관 및 영구 삭제 시점</h2>
+  <p>계정과 식별 정보는 삭제 요청 즉시 처리되지만, 학습 데이터는 운영상의 이유로 일정 기간 보관된 후 영구 삭제될 수 있습니다. 운영자는 보관된 데이터에 일상적인 운영 목적으로 접근하지 않으며, 보관 기간이 종료되면 자동으로 영구 삭제 처리될 예정입니다.</p>
+  <p>법령에서 보관을 요구하는 경우 해당 법령이 정한 기간 동안만 별도로 보관됩니다 (자세한 내용은 <a href="/privacy/">개인정보처리방침</a>을 확인해주세요).</p>
+
+  <h2>4. 보존되지 않는 데이터</h2>
+  <ul>
+    <li>익명화된 통계, 마케팅 목적의 별도 데이터를 보존하지 않습니다.</li>
+    <li>백업 매체에 남는 사본은 백업 보존 주기가 지나면 자동으로 폐기됩니다.</li>
+  </ul>
+
+  <h2>5. 같은 Google 계정으로 다시 가입할 경우</h2>
+  <p>계정을 삭제한 뒤 같은 Google 계정으로 다시 로그인하면 <strong>새 계정</strong>이 생성됩니다. 이전 계정의 학습 데이터는 복원되지 않으며, 사용자명도 다시 선택해야 합니다.</p>
+
+  <h2>6. 삭제 요청을 위한 다른 방법</h2>
+  <p>앱에 접근할 수 없는 상태이거나 앱 내 절차를 진행하기 어려운 경우, 아래 이메일로 가입에 사용한 Google 계정 주소를 적어 삭제를 요청해주세요. 본인 확인 후 동일한 절차로 처리해드립니다.</p>
+  <p>문의 이메일: <a href="mailto:eastshine200@gmail.com">eastshine200@gmail.com</a></p>
+
+  <p class="nav"><a href="/">← Kotonoha 법적 고지</a></p>
+</body>
+</html>
